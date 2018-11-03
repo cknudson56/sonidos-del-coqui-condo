@@ -14,3 +14,14 @@ $script-font: 'Lily Script One', cursive;
 $headline-font: 'Montserrat', sans-serif;
 $body-font: 'Open Sans', sans-serif;
 
+.link-button {
+	padding: 5px;
+	border-radius: 10px;
+	border: 4px solid $orange;
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	color: $orange;
+	font-family: $headline-font;
+	font-size: 1.2rem;
+}
