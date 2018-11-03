@@ -92,5 +92,83 @@ main {
 
 	.link-button {
 		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+}
+
+//HOME HIGHLIGHTS
+
+#home-highlights {
+	height: 600px;
+	background-color: $dark-green;
+	margin-bottom: 40px;
+}
+
+//FOOTER
+
+footer {
+	background-color: $dark-blue;
+
+	ul, p {
+		text-align: center;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-top: 15px;
+
+		li {
+			display: inline;
+			font-family: $headline-font;
+			font-size: 1.2rem;
+			padding: 2%;
+		}
+
+		a {
+			color: $orange;
+			text-decoration: none;
+			@include transition(color 0.3s ease);
+		}
+
+		a:hover {
+			color: $white;
+		}
+	}
+
+	#logo-font {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		h2 {
+			color: $white;
+			padding: 8px 5px 15px 5px;
+		}
+
+		.sub-logo1 {
+			font-family: $script-font;
+			font-weight: normal;
+			font-size: 1.7rem;
+		}
+
+		.sub-logo2 {
+			font-family: $headline-font;
+			align-self: center;
+		}
+	}
+
+	p {
+		color: $orange;
+		padding-bottom: 15px;
+		font-size: 0.8rem;
+
+		a {
+			color: $orange;
+			@include transition(color 0.3s ease);
+		}
+
+		a:hover {
+			color: $white;
+		}
 	}
 }
