@@ -11,3 +11,57 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+
+h1 {
+	font-family: $script-font;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: $headline-font;
+}
+
+p, li, a {
+	font-family: $body-font;
+	text-decoration: none;
+	color: $black;
+}
+
+@mixin transition($property) {
+		-webkit-transition: $property;
+		-moz-transition: $property;
+	transition: $property;
+}
+
+
+//NAVIGATION
+
+nav {
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		width: 200px;
+		height: 120px;
+		position: absolute;
+	}
+
+	#menu-bar {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 40px;
+		width: 70%;
+
+		li a {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+			width: 126px;
+			@include transition(color 0.3s ease);
+		}
+
+		a:hover {
+			color: $aqua;
+		}
+	}
+}
