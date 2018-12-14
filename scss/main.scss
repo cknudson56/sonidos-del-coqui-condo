@@ -173,8 +173,14 @@ footer {
 	}
 }
 
-
-
+#landing-header {
+	img {
+		width: 300px;
+		display: block;
+		padding-top: 20px;
+		margin: auto;
+	}
+}
 
 
 
@@ -212,7 +218,17 @@ footer {
 	background-color: $aqua;
 
 	.availability {
+		padding-top: 40px;
+		padding-bottom: 100px;
 		height: 500px;
+		margin: auto;
+		width: 300px;
+		font-family: $headline-font;
+		text-align: center;
+
+		h2 {
+			padding-bottom: 20px;
+		}
 	}
 
 	.container {
@@ -229,17 +245,22 @@ footer {
 	    h2 {
 	    	width: 100%;
 	    	text-align: center;
-	    	padding: 10px 0 40px 0;
+	    	padding: 40px 0 40px 0;
 	    }
 
 	    #us {
-	    	width: 300px;
+	    	width: 250px;
 	    	height: 100%;
 	    	padding-bottom: 40px;
 	    }
 
 	    form {
-	    	width: 300px;
+	    	width: 260px;
+	    	padding-bottom: 40px;
+
+	    	@media (min-width: 650px) and (max-width: 749px) {
+	    		padding-left: 10px;
+	    	}
 
 	    	@media (min-width: 750px) {
 	    		width: 500px;
@@ -247,7 +268,7 @@ footer {
 	    }
 
 		input[type=text], input[type=email], input[type=tel], select, textarea {
-		    width: 300px;
+		    width: 260px;
 		    padding: 12px;
 		    border: 1px solid #ccc;
 		    border-radius: 4px;

@@ -16,11 +16,10 @@
 
 <body>
 
-    <section id="landing-page">
-        <h1>Welcome to Sonidos del Coqui, Sounds of the Coqui</h1>
-        <p>Sonidos del Coqui is our little cove of paradise in Fajardo, Puerto Rico. This three bedroom, # bathroom penthouse condo is mintues from the El Yunque Tropical Rainforest and the beach, with a rooftop terrace with views of the ocean. This condo is available to rent to our friends and family. This is not open to the public. But we appreciate your interest!</p>
-        <p>Our page is currently under construction, but you can still check out our availability and contact when you're ready to book!</p>
+    <section id="landing-header">
+        <img src="img/coqui-logo.png" title="Sonidos del Coqui Logo" alt="Sonidos del Coqui Logo">
     </section>
+
 
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
@@ -91,6 +90,10 @@
             to { transform: rotate(360deg); }
         }
 
+        .rotate {
+            transform: rotate(180deg);
+        }
+
         /*jssor slider bullet skin 051 css*/
         .jssorb051 .i {position:absolute;cursor:pointer;}
         .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
@@ -118,18 +121,18 @@
             <div>
                 <img data-u="image" src="img/rooftop-lounge.jpeg" />
             </div>
-            <!-- <div>
-                <img data-u="image" src="img/hammock.jpeg" />
-            </div> -->
+            <div>
+                <img data-u="image" src="img/hammock.jpeg" class="rotate" />
+            </div>
             <div>
                 <img data-u="image" src="img/forrest.jpeg" />
             </div>
-            <!-- <div>
-                <img data-u="image" src="img/kitchen.jpg" />
+            <div>
+                <img data-u="image" src="img/kitchen.jpg" class="rotate" />
             </div>
             <div>
-                <img data-u="image" src="img/living-room.jpeg" />
-            </div> -->
+                <img data-u="image" src="img/living-room.jpeg" class="rotate" />
+            </div>
             <div>
                 <img data-u="image" src="img/master.jpeg" />
             </div>
@@ -170,9 +173,16 @@
     <!-- #endregion Jssor Slider End -->
 
 
+    <section id="landing-page">
+        <h1>Welcome to Sonidos del Coqui, Sounds of the Coqui</h1>
+        <p>Sonidos del Coqui is our little cove of paradise in Fajardo, Puerto Rico. This three bedroom, # bathroom penthouse condo is mintues from the El Yunque Tropical Rainforest and the beach, with a rooftop terrace with views of the ocean. This condo is available to rent to our friends and family. This is not open to the public. But we appreciate your interest!</p>
+        <p>Our page is currently under construction, but you can still check out our availability and contact when you're ready to book!</p>
+    </section>
+
 
     <section id="communication">
         <div class="availability">
+            <h2>Availability</h2>
             <div style="background:#fff;max-width:628px;"><iframe src="https://www.availcalendar.com/print/6939" width="100%" height="470" frameborder="0" scrolling="no"></iframe></div><p><a href="http://www.availcalendar.com/calendar/6939" target="_blank">Sonidos del Coqui Availability Calendar</a></p>
         </div>
 
