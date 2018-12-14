@@ -8,46 +8,211 @@
     <meta name="author" content="Christie Knudson" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <link rel="stylesheet" href="css/slider.css" />
-    <script src="js/modernizr.custom.js"></script> -->
+
     <!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="img/coqui-logo.png" alt="Sonidos del Coqui Logo" title="Sonidos del Coqui Logo"></a>
-        <ul id="menu-bar">
-            <li><a href="#">Property Details &amp; Amenities</a></li>
-            <li><a href="#">About Fajardo &amp; Puerto Rico</a></li>
-            <li><a href="#">Local Activities</a></li>
-            <li><a href="#">Rates &amp; Availability</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <header></header>
-    <main>
+
+    <section id="landing-header">
+        <img src="img/coqui-logo.png" title="Sonidos del Coqui Logo" alt="Sonidos del Coqui Logo">
+    </section>
+
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:730px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:730px;overflow:hidden;">
+
+            <div>
+                <img data-u="image" src="img/rooftop-table.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/rooftop-lounge.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/hammock.jpeg" class="rotate" />
+            </div>
+            <div>
+                <img data-u="image" src="img/forrest.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/kitchen.jpg" class="rotate" />
+            </div>
+            <div>
+                <img data-u="image" src="img/living-room.jpeg" class="rotate" />
+            </div>
+            <div>
+                <img data-u="image" src="img/master.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/bed2.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/condo.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/beach-path.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/beach.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+
+    <section id="landing-page">
         <h1>Welcome to Sonidos del Coqui, Sounds of the Coqui</h1>
-        <p>[INSERT OWN DESCRIPTION]</p>
-        <p>Looking for a relaxing, beautiful, romantic and yet exciting vacation spot? Our Sonidos del Coqui penthouse condo nestles in the perfect location with spectacular views of the ocean and the lush mountains of Puerto Rico. Located on the doorstep of the El Yunque Tropical Rainforest, the condo offers vacation accommodations for up to six guests. Standing atop a foot hill, the vacation home has inspiring panoramic views from its terrace. This is a gated complex with 24/7 security located just 35 miles from San Juan Airport and minutes away from beaches, marinas, shopping areas and main traffic arteries. The condo is spacious and modern with all the amenities for a great vacation resting place and is capped off by a large private roof top terrace.</p>
-        <a href="#"><p class="link-button">Check Availability</p></a>
-    </main>
-    <section id="home-highlights"></section>
-    <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        <div id="logo-font">
-            <h2 class="sub-logo1">Nido del Coqui</h2>
-            <h2 class="sub-logo2"> Vacation Condo</h2>
+        <p>Sonidos del Coqui is our little cove of paradise in Fajardo, Puerto Rico. This three bedroom, 2 bathroom penthouse condo is mintues from the El Yunque Tropical Rainforest and the beach, with a rooftop terrace with views of the ocean. This condo is available to rent to our friends and family. This is not open to the public. But we appreciate your interest!</p>
+        <p>Our page is currently under construction, but you can still check out our availability and contact when you're ready to book!</p>
+    </section>
+
+
+    <section id="communication">
+        <div class="availability">
+            <h2>Availability</h2>
+            <div style="background:#fff;max-width:628px;"><iframe src="https://www.availcalendar.com/print/6939" width="100%" height="470" frameborder="0" scrolling="no"></iframe></div><p><a href="http://www.availcalendar.com/calendar/6939" target="_blank">Sonidos del Coqui Availability Calendar</a></p>
         </div>
 
-        <p>Site created by <a href="http://knudsondesigns.com/">Knudson Designs</a></p>
-    </footer>
+        <div class="container">
+            <h2>Contact us about booking!</h2>
+
+            <img src="img/karen-and-tim.jpeg" id="us" />
+
+            <form id="contact" name="contact" method="post" action="form.php" onsubmit="return validateForm(this)">
+                <label for="name">First and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <label for="usrtel">Telephone</label>
+                <input type="tel" id="tel" name="usrtel" placeholder="Telephone">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Please include the dates you were considering booking" style="height:100px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </section>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
+
 </html>

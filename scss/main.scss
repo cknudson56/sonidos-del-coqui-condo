@@ -173,6 +173,12 @@ footer {
 	}
 }
 
+
+
+
+
+
+
 #landing-header {
 	img {
 		width: 300px;
@@ -181,8 +187,6 @@ footer {
 		margin: auto;
 	}
 }
-
-
 
 #landing-page {
 	margin-bottom: 30px;
@@ -229,6 +233,13 @@ footer {
 		h2 {
 			padding-bottom: 20px;
 		}
+
+		@media (min-width: 500px) {
+			width: 450px;
+		}
+		@media (min-width: 700px) {
+			width: 650px;
+		}
 	}
 
 	.container {
@@ -252,6 +263,10 @@ footer {
 	    	width: 250px;
 	    	height: 100%;
 	    	padding-bottom: 40px;
+
+	    	@media (min-width: 750px) {
+	    		width: 350px;
+	    	}
 	    }
 
 	    form {
