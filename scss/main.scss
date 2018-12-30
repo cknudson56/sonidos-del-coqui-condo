@@ -44,6 +44,11 @@ nav {
 		width: 200px;
 		height: 120px;
 		position: absolute;
+		right: 20px;
+
+		@media (min-width: 900px) {
+			left: 50px;
+		}
 	}
 
 	#menu-bar {
@@ -52,6 +57,11 @@ nav {
 		justify-content: space-around;
 		padding-top: 40px;
 		width: 70%;
+
+		@media (max-width:899px) {
+			visibility:hidden;
+			overflow-x: hidden;
+		}
 
 		li a {
 			display: flex;
@@ -63,6 +73,101 @@ nav {
 
 		a:hover {
 			color: $aqua;
+		}
+	}
+
+	#menuToggle {
+		display: block;
+		position: relative;
+		top: 40px;
+		left: 30px;
+		z-index: 1;
+	    -webkit-user-select: none;
+		user-select: none;
+
+		@media (min-width:900px) {
+			visibility:hidden;
+		}
+
+		input {
+			display: block;
+			width: 40px;
+			height: 32px;
+			position: absolute;
+			top: -7px;
+			left: -5px;
+			cursor: pointer;
+			opacity: 0;
+			z-index: 2;
+		    -webkit-touch-callout: none;
+		}
+
+		span {
+			display: block;
+			width: 33px;
+			height: 4px;
+			margin-bottom: 5px;
+			position: relative;
+			background: $dark-blue;
+			border-radius: 3px;
+			z-index: 1;
+			transform-origin: 4px 0px;
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		            	background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		            	opacity 0.55s ease;
+		}
+
+		span:first-child {
+			transform-origin: 0% 0%;
+		}
+
+		span:nth-last-child(2) {
+			transform-origin: 0% 100%;
+		}
+
+		input:checked ~ span {
+			opacity: 1;
+			transform: rotate(45deg) translate(-2px, -1px);
+			background: $white;
+		}
+
+		input:checked ~ span:nth-last-child(3) {
+			opacity: 0;
+			transform: rotate(0deg) scale(0.2, 0.2);
+		}
+
+		input:checked ~ span:nth-last-child(2) {
+			transform: rotate(-45deg) translate(0, -1px);
+		}
+
+		input:checked ~ ul {
+			transform: none;
+		}
+	}
+
+	#menu {
+		position: absolute;
+		width: 100vw;
+		margin: -100px 0 0 -30px;
+		padding-bottom: 50px;
+		padding-top: 125px;
+		background: $dark-blue;
+		list-style-type: none;
+	    -webkit-font-smoothing: antialiased;
+		transform-origin: 0% 0%;
+		transform: translate(-100%, 0);
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+		li {
+			padding: 10px 0;
+			font-size: 1rem;
+			text-align: center;
+		}
+
+		li a {
+			color: $white;
+			text-decoration: none;
+			font-family: $body-font;
 		}
 	}
 }
@@ -80,9 +185,20 @@ header {
 main {
 	h1 {
 		padding: 40px 0 40px 0;
-		width: 450px;
+		width: 320px;
 		margin: auto;
 		color: $dark-blue;
+		font-size: 1.5rem;
+
+		@media (min-width: 600px) {
+			padding-top: 60px;
+			width: 450px;
+			font-size: 2rem;
+		}
+		@media (min-width: 900px) {
+			width: 600px;
+			font-size: 2.5rem;
+		}
 	}
 
 	p {
@@ -92,7 +208,7 @@ main {
 
 	.link-button {
 		margin-top: 40px;
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -104,7 +220,7 @@ main {
 	margin-bottom: 40px;
 
 	h3 {
-		padding-top: 50px;
+		padding-top: 60px;
 		padding-bottom: 50px;
 		text-align: center;
 		font-size: 1.3rem;
@@ -114,7 +230,7 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 
 		.high-box-div {
 			width: 90%;
@@ -140,6 +256,15 @@ main {
 				padding-top: 10px;
 				padding-bottom: 20px;
 				text-align: center;
+				margin: auto;
+				width: 300px;
+
+				@media (min-width: 900px) {
+					width: 400px;
+				}
+				@media (min-width: 1150px) {
+					width: 500px;
+				}
 			}
 		}
 	}
