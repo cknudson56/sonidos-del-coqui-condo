@@ -313,6 +313,88 @@ main {
 	}
 }
 
+//CONTACT
+
+#contact {
+	.container {
+		font-family: $body-font;
+	    border-radius: 5px;
+	    background-color: $off-white;
+	    padding: 20px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 50px;
+	    display: flex;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+
+	    h1 {
+	    	width: 100%;
+	    	text-align: center;
+	    	padding: 40px 0 40px 0;
+	    }
+
+	    #us {
+	    	width: 250px;
+	    	height: 100%;
+	    	padding: 0 10px 40px 10px;
+
+			@media (min-width: 400px) {
+	    		width: 380px;
+	    	}
+	    	@media (min-width: 750px) {
+	    		width: 480px;
+	    	}
+	    }
+
+	    form {
+	    	width: 260px;
+	    	padding-bottom: 40px;
+
+			@media (min-width: 400px) {
+	    		width: 350px;
+	    	}
+	    	@media (min-width: 650px) and (max-width: 749px) {
+	    		padding-left: 10px;
+	    	}
+	    	@media (min-width: 750px) {
+	    		width: 500px;
+	    	}
+	    }
+
+		input[type=text], input[type=email], input[type=tel], select, textarea {
+		    width: 260px;
+		    padding: 12px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		    margin-top: 6px;
+		    margin-bottom: 16px;
+		    resize: vertical;
+
+			@media (min-width: 400px) {
+	    		width: 350px;
+	    	}
+		    @media (min-width: 750px) {
+	    		width: 500px;
+	    	}
+		}
+
+		input[type=submit] {
+		    background-color: $dark-blue;
+		    color: white;
+		    padding: 12px 20px;
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		    background-color: $aqua;
+		}
+	}
+}
+
 //FOOTER
 
 footer {
