@@ -39,6 +39,7 @@ p, li, a {
 nav {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 35px;
 
 	img {
 		width: 200px;
@@ -174,10 +175,18 @@ nav {
 
 //HEADER - IMAGE SLIDER
 
-header {
+.slider {
 	height: 400px;
 	background-color: $orange;
-	margin-top: 40px;
+}
+
+.img-banner {
+	background-image: url('../img/beach-path.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+
 }
 
 //MAIN
@@ -210,6 +219,11 @@ main {
 		margin-top: 40px;
 		margin-bottom: 60px;
 	}
+
+	.calendar-page-text {
+		max-width: 635px;
+		margin: auto;
+	}
 }
 
 //HOME HIGHLIGHTS
@@ -217,7 +231,7 @@ main {
 #home-highlights {
 
 	background-color: $off-white;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 
 	h3 {
 		padding-top: 60px;
@@ -267,6 +281,34 @@ main {
 					width: 500px;
 				}
 			}
+		}
+	}
+}
+
+//CALENDAR
+
+#calendar-div {
+	background-color: $off-white;
+	margin: 50px 0 50px 0;
+	
+	#calendar {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: 500px;
+		margin: auto;
+		width: 300px;
+		font-family: $headline-font;
+		text-align: center;
+
+		h2 {
+			padding-bottom: 20px;
+		}
+
+		@media (min-width: 500px) {
+			width: 450px;
+		}
+		@media (min-width: 700px) {
+			width: 650px;
 		}
 	}
 }
