@@ -458,6 +458,7 @@ main {
 
 .food {
 	background-color: $off-white;
+	margin-bottom: 50px;
 }
 
 .flex-things-to-do {
@@ -468,18 +469,42 @@ main {
 	h3 {
 		width: 300px;
 		text-align: center;
+
+		@media (min-width: 400px) {
+			width: 250px;
+		}
 	}
+
+	@media (min-width: 900px) {
+			padding-bottom: 75px;
+		}
 }
 
 .to-do-box {
 	width: 300px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	h2 {
 		text-align: center;
 		padding: 40px 0 20px 0;
+
+		@media (min-width: 900px) {
+			padding-top: 75px;
+		}
 	}
 	p {
-		padding: 0 30px 0 60px; 
+		padding: 0 30px 0 40px; 
+		max-width: 800px;
+		@media (min-width: 1000px) {
+			margin: auto;
+		}
+	}
+
+	@media (min-width: 400px) {
+		width: 80%;
+	}
+	@media (min-width: 1000px) {
+		width: 70%;
 	}
 }
 
