@@ -72,20 +72,99 @@
     </main>
 
     <section id="img-slider-caps">
-        <div class="container">
-            <div class="timer"></div>
-            <div class="slideshow">
-                <div class="slide"><img src="img/complex.jpg" alt="Complex" title="Complex"><h3>Colorful Exterior of Complex</h3></div>
-                <div class="slide"><img src="img/patio.jpg" alt="Patio Table" title="Patio Table"><h3>Additional Table on Rooftop with a Spactacular View</h3></div>
-                <div class="slide"><img src="img/patio-2.jpg" alt="Patio Seating" title="Patio Seating"><h3>Lounge on the Rooftop</h3></div>
-                <div class="slide"><img src="img/kitchen.jpg" alt="Kitchen" title="Kitchen"><h3>A Fully Stocked Kitchen</h3></div>
-                <div class="slide"><img src="img/livingroom.jpg" alt="Living Room" title="Living Room"><h3>Complete Entertainment in the Living Room</h3></div>
-                <div class="slide"><img src="img/couch.jpg" alt="Couch" title="Couch">Relax as a family Together<h3></h3></div>
-                <div class="slide"><img src="img/dining.jpg" alt="Dining Room" title="Dining Room"><h3>Formal Dining Room for Special Occasions</h3></div>
-                <div class="slide"><img src="img/balcony.jpg" alt="Balcony" title="Balcony"><h3>Small and Cozy Seating on the Balcony</h3></div>
-                <div class="slide"><img src="img/master.jpg" alt="Master Bed" title="Master Bed"><h3>Queen Size Bed in the Master Bedroom</h3></div>
-                <div class="slide"><img src="img/bed-2.jpg" alt="Bedroom number 2" title="Bedroom number 2"><h3>Queen Size Bed in Second Bedroom</h3></div>
-                <div class="slide"><img src="img/pool.jpg" alt="Pool" title="Pool"><h3>Swim Close to Home at the Pool</h3></div>
+        <div id="slider-wrap">
+            <ul id="slider">
+                <li id="slide-1" class="back-img">
+                    <div>
+                        <h3>Complex Building</h3>
+                        <span>Colorful Exterior of Complex</span>
+                    </div>
+                </li>
+
+                <li id="slide-2" class="back-img">
+                    <div>
+                        <h3>Rooftop</h3>
+                        <span>Additional Table with a Spactacular View</span>
+                    </div>
+                </li>
+
+                <li id="slide-3" class="back-img">
+                    <div>
+                        <h3>Rooftop</h3>
+                        <span>A Place to Lounge at the End of the Day</span>
+                    </div>
+                </li>
+
+                <li id="slide-4" class="back-img">
+                    <div>
+                        <h3>Kitchen</h3>
+                        <span>Comes Fully Equiped for all your Culinary Needs</span>
+                    </div>
+                </li>
+
+                <li id="slide-5" class="back-img">
+                    <div>
+                        <h3>Living Room</h3>
+                        <span>Connect to all of your Favorite Entertainment</span>
+                    </div>
+                </li>
+
+                <li id="slide-6" class="back-img">
+                    <div>
+                        <h3>Living Room</h3>
+                        <span>Come, Relax Together with the Family</span>
+                    </div>
+                </li>
+
+                <li id="slide-7" class="back-img">
+                    <div>
+                        <h3>Dining Room</h3>
+                        <span>A Formal Space for all your Special Occasions</span>
+                    </div>
+                </li>
+
+                <li id="slide-8" class="back-img">
+                    <div>
+                        <h3>Balcony</h3>
+                        <span>Cozy Seating for your Morning Coffee</span>
+                    </div>
+                </li>
+
+                <li id="slide-9" class="back-img">
+                    <div>
+                        <h3>Master Bedroom</h3>
+                        <span>Queen Size Bed and an Attached Bathroom</span>
+                    </div>
+                </li>
+
+                <li id="slide-10" class="back-img">
+                    <div>
+                        <h3>Bedroom #2</h3>
+                        <span>Another Queen Size Bed!</span>
+                    </div>
+                </li>
+<!--
+                <li id="slide-11" class="back-img">
+                    <div>
+                        <h3>Bedroom #3</h3>
+                        <span>Full Size Bed</span>
+                    </div>
+                </li>
+-->
+                <li id="slide-12" class="back-img">
+                    <div>
+                        <h3>Pool</h3>
+                        <span>Want to stay close? Swim in the Complex's Pool</span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+            <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+
+
+            <div id="pagination-wrap">
+                <ul></ul>
             </div>
         </div>
     </section>
@@ -184,6 +263,9 @@
         <p>Site created by <a href="http://knudsondesigns.com/">Knudson Designs</a></p>
     </footer>
 
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/about-slider.js"></script>
+
+
 </body>
 </html>
