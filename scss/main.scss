@@ -892,6 +892,7 @@ main {
 	    display: flex;
 	    justify-content: space-around;
 	    flex-wrap: wrap;
+	    max-width: 1100px;
 
 	    h1 {
 	    	width: 100%;
@@ -902,13 +903,13 @@ main {
 	    #us {
 	    	width: 250px;
 	    	height: 100%;
-	    	padding: 0 10px 40px 10px;
+	    	padding: 0 10px 20px 10px;
 
 			@media (min-width: 400px) {
-	    		width: 380px;
+	    		width: 340px;
 	    	}
 	    	@media (min-width: 750px) {
-	    		width: 480px;
+	    		width: 440px;
 	    	}
 	    }
 
@@ -999,18 +1000,26 @@ footer {
 
 		h2 {
 			color: $white;
-			padding: 8px 5px 15px 5px;
+			padding: 0 5px 0 5px;
 		}
 
 		.sub-logo1 {
 			font-family: $script-font;
 			font-weight: normal;
 			font-size: 1.7rem;
+			padding-top: 8px;
+			@media (min-width: 417px) {
+				padding-bottom: 15px;
+			}
 		}
 
 		.sub-logo2 {
 			font-family: $headline-font;
 			align-self: center;
+			padding-bottom: 15px;
+			@media (min-width: 417px) {
+				padding-top: 8px;
+			}
 		}
 	}
 
