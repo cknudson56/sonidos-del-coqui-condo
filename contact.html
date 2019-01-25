@@ -48,22 +48,49 @@
             <h1>Contact</h1>
 
             <img src="img/tim-karen.jpg" id="us">
-
+<!--
             <form id="contact" name="contact" method="post" action="form.php" onsubmit="return validateForm(this)">
                 <label for="name">First and Last Name</label>
-                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="text" id="name" name="name" placeholder="Full Name"/>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="email" id="email" name="email" placeholder="Email"/>
 
                 <label for="usrtel">Telephone</label>
-                <input type="tel" id="tel" name="usrtel" placeholder="Telephone">
+                <input type="tel" id="tel" name="usrtel" placeholder="Telephone"/>
 
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Please include the dates you were considering booking" style="height:100px"></textarea>
 
                 <input type="submit" value="Submit">
             </form>
+        -->
+
+        <form method="post" action="mailto:christie.kosal@gmail.com" name="contact" id="contactform">
+
+            <label for="name">First and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name"/>
+
+            <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email"/>
+
+            <label for="tel">Telephone</label>
+                <input type="tel" id="tel" name="usrtel" placeholder="Telephone"/>
+
+            <div>
+            <label for="date-arrival" class="dates">Check-In Date
+                <input type="date" name="date-arrival" id="date-arrival" /></label>
+
+            <label for="date-depart" class="dates date-2">Check-Out Date
+                <input type="date" name="date-depart" id="date-depart" /></label>
+            </div>
+
+            <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Any other questions or requests?" style="height:100px"></textarea>
+
+            <input type="submit" value="Submit" />
+            
+        </form>
         </div>
 
     </main>
